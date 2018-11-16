@@ -1,18 +1,16 @@
 # Week8CP
 # Project 8 - Pentesting Live Targets
 
-Time spent: **X** hours spent in total
-
-> Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
+Time spent: **15** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
+1. (Required) Cross-site scripting
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
     - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+  - [https://media.giphy.com/media/1qZ91rSfvF3a3sFgGT/giphy.gif] GIF Walkthrough: 
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
