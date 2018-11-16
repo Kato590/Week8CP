@@ -10,7 +10,7 @@ Time spent: **20** hours spent in total
     - Vulnerability types: Cross-site scripting
     - Tested in version: N/A
     - Fixed in version: N/A
-  - [GIF](https://media.giphy.com/media/1qZ91rSfvF3a3sFgGT/giphy.gif)GIF Walkthrough: 
+  - [GIF]GIF Walkthrough: [Link](https://media.giphy.com/media/1qZ91rSfvF3a3sFgGT/giphy.gif)
   - [ ] Steps to recreate: 
   Throguh the contact form before you log in, you can sned a feedback with your name, email and comment. Put a malcious comment and log into the web site, and then open the feedback and you will see the thing.
   - [ ] Affected source code:
