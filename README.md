@@ -1,20 +1,34 @@
 # Week8CP
 # Project 8 - Pentesting Live Targets
 
-Time spent: **15** hours spent in total
+Time spent: **20** hours spent in total
 
 ## Pentesting Report
 
 1. (Required) Cross-site scripting
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [https://media.giphy.com/media/1qZ91rSfvF3a3sFgGT/giphy.gif] GIF Walkthrough: 
+  - [ ] Summary: Simple attack on a web site
+    - Vulnerability types: Cross-site scripting
+    - Tested in version: N/A
+    - Fixed in version: N/A
+  - [GIF](https://media.giphy.com/media/1qZ91rSfvF3a3sFgGT/giphy.gif)GIF Walkthrough: 
   - [ ] Steps to recreate: 
+  Throguh the contact form before you log in, you can sned a feedback with your name, email and comment. Put a malcious comment and log into the web site, and then open the feedback and you will see the thing.
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+    - [Link 1](https://104.198.208.81/green/public/staff/feedback/index.php)
+    
+    
+2. (Required) User Enumeration
+  - [ ] Summary: Get lists of users.
+    - Vulnerability types: SQLI
+    - Tested in version: N/A
+    - Fixed in version: N/A
+  - [ ]() GIF Walkthrough: 
+  - [ ] Steps to recreate: Go to a page showing some users and manipulate the URL so taht it shows id=' OR 1=1 --' at the end of it.
+  - [ ] Affected source code:
+    - [Link 1](https://104.198.208.81/blue/public/staff/salespeople/show.php?id=' OR 1=1 --')
+    
+    
+3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
@@ -23,7 +37,7 @@ Time spent: **15** hours spent in total
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+4. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
@@ -32,16 +46,7 @@ Time spent: **15** hours spent in total
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
+5. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
@@ -53,22 +58,21 @@ Time spent: **15** hours spent in total
 
 ## Assets
 
-List any additional assets, such as scripts or files
+FireFox (Developper ver.)
+Kali Linux
 
 ## Resources
-
-- [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
-- [WordPress Developer Reference](https://developer.wordpress.org/reference/)
-
-GIFs created with [LiceCap](http://www.cockos.com/licecap/).
+- [Friend](https://github.com/FriendComp/codepathfall2018week8/blob/master/README.md)
+- [Cross-site Scripting (XSS)](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))
+- [The Cross-site Scripting (XSS) Vulnerability: Definition and Prevention](https://www.netsparker.com/blog/web-security/cross-site-scripting-xss/)
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2018] [Takeaki Kato]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
