@@ -5,7 +5,7 @@ Time spent: **20** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Cross-site scripting
+1. (Required) Cross-site scripting (GREEN)
   - [ ] Summary: Simple attack on a web site
     - Vulnerability types: Cross-site scripting
     - Tested in version: N/A
@@ -17,7 +17,7 @@ Time spent: **20** hours spent in total
     - [Link 1](https://104.198.208.81/green/public/staff/feedback/index.php)
     
     
-2. (Required) User Enumeration
+2. (Required) User Enumeration (BLUE)
   - [ ] Summary: Get lists of users.
     - Vulnerability types: SQLI
     - Tested in version: N/A
