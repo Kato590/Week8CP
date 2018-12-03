@@ -38,15 +38,19 @@ Time spent: **20** hours spent in total
   - [ ] GIF Walkthrough: (https://media.giphy.com/media/82RIDxggtt8BxFvW17/giphy.gif)
   - [ ] Steps to recreate: Log in and out the site to check who is and is not public yet. There are some acccounts that sould not be seen in the public. So, get the ID# of one of the accounts and log out the site. Then go to the salesperson list and open a random one and change its ID# to the one that you checked and was not public. 
 
-5. (Optional) Vulnerability Name or ID
+5. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
+
+    
+ 6. (Required) Vulnerability Name or ID
+  - [ ] Summary: 
+    - Vulnerability types:
+  - [ ] GIF Walkthrough: 
+  - [ ] Steps to recreate: 
+
 
 ## Assets
 
