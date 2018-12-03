@@ -14,15 +14,11 @@ Time spent: **20** hours spent in total
   - [ ] Affected source code:
     - [Link 1](https://104.198.208.81/green/public/staff/feedback/index.php)
     
-    
-2. (Required) User Enumeration (BLUE1)
-  - [ ] Summary: Get lists of users.
+2. (Required) User Enumeration (Green2)
+  - [ ] Summary: An attakcer can get to guess some of correct usernames by doing trial and error at the login sreen
     - Vulnerability types: SQLI
-  - [ ]() GIF Walkthrough: 
-  - [ ] Steps to recreate: Go to a page showing some users and manipulate the URL so taht it shows id=' OR 1=1 --' at the end of it.
-  - [ ] Affected source code:
-    - [Link 1](https://104.198.208.81/blue/public/staff/salespeople/show.php?id=' OR 1=1 --')
-    
+  - [ ]() GIF Walkthrough: (https://media.giphy.com/media/2tP1tFpswP5PgLJCYy/giphy.gif)
+  - [ ] Steps to recreate:   Type the correct username and a wrong password, there shows bold error message, but when type a wrong username and a radom password, the error message is not bold.
     
 3. (Required)Cross site request forgery (RED1)
   - [ ] Summary: The admin account can encode a malcious code on any of first name, last name, phone, or email address section, and it can jump to a bad web site. 
@@ -38,18 +34,18 @@ Time spent: **20** hours spent in total
   - [ ] GIF Walkthrough: (https://media.giphy.com/media/82RIDxggtt8BxFvW17/giphy.gif)
   - [ ] Steps to recreate: Log in and out the site to check who is and is not public yet. There are some acccounts that sould not be seen in the public. So, get the ID# of one of the accounts and log out the site. Then go to the salesperson list and open a random one and change its ID# to the one that you checked and was not public. 
 
-5. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+5. (Required) Session hijacking (Blue1)
+  - [ ] Summary: Change the session ID to a different one. 
+    - Vulnerability types: Session hijacking/ fixation
+  - [ ] GIF Walkthrough: (https://media.giphy.com/media/jyOYYj3bB7tndlu256/giphy.gif)
+  - [ ] Steps to recreate: Log in the site and change the URL to "...public/hacktools/shange_session_id.php" and then you can change the session ID.
 
     
- 6. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+ 6. (Required) (Blue2)
+  - [ ] Summary: An attacker can do a SQL injection by chaging the last part of any salesperson's ID to " ' or true " and the database will fail.
+    - Vulnerability types: SQL Injection
+  - [ ] GIF Walkthrough: (https://media.giphy.com/media/WvuquLOS5eam1n77Zz/giphy.gif)
+  - [ ] Steps to recreate: No need to login. Open any salesperson's page and change the last part of its URL to " ' or true". Then, your SQL injection is suceessful. 
 
 
 ## Assets
