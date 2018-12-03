@@ -5,11 +5,9 @@ Time spent: **20** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Cross-site scripting (GREEN)
+1. (Required) Cross-site scripting (GREEN1)
   - [ ] Summary: Simple attack on a web site
     - Vulnerability types: Cross-site scripting
-    - Tested in version: N/A
-    - Fixed in version: N/A
   - [GIF]GIF Walkthrough: [Link](https://media.giphy.com/media/1qZ91rSfvF3a3sFgGT/giphy.gif)
   - [ ] Steps to recreate: 
   Throguh the contact form before you log in, you can sned a feedback with your name, email and comment. Put a malcious comment and log into the web site, and then open the feedback and you will see the thing.
@@ -17,35 +15,29 @@ Time spent: **20** hours spent in total
     - [Link 1](https://104.198.208.81/green/public/staff/feedback/index.php)
     
     
-2. (Required) User Enumeration (BLUE)
+2. (Required) User Enumeration (BLUE1)
   - [ ] Summary: Get lists of users.
     - Vulnerability types: SQLI
-    - Tested in version: N/A
-    - Fixed in version: N/A
   - [ ]() GIF Walkthrough: 
   - [ ] Steps to recreate: Go to a page showing some users and manipulate the URL so taht it shows id=' OR 1=1 --' at the end of it.
   - [ ] Affected source code:
     - [Link 1](https://104.198.208.81/blue/public/staff/salespeople/show.php?id=' OR 1=1 --')
     
     
-3. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+3. (Required)Cross site request forgery (RED1)
+  - [ ] Summary: The admin account can encode a malcious code on any of first name, last name, phone, or email address section, and it can jump to a bad web site. 
+    - Vulnerability types:CSRF
+    - Tested in version:4.2
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-4. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [GIF] (https://media.giphy.com/media/39m1OPipcCwRMypJJw/giphy.gif)
+  - [ ] Steps to recreate: Log in to the site, add a new person, and encode a malcious code when editing the new account. 
+
+4. (Required) Insecure direct object reference (RED2)
+  - [ ] Summary: This vulnerability is that shows an account which sould not be seen in the public.
+    - Vulnerability types:IDOR
+  - [ ] GIF Walkthrough: (https://media.giphy.com/media/82RIDxggtt8BxFvW17/giphy.gif)
+  - [ ] Steps to recreate: Log in and out the site to check who is and is not public yet. There are some acccounts that sould not be seen in the public. So, get the ID# of one of the accounts and log out the site. Then go to the salesperson list and open a random one and change its ID# to the one that you checked and was not public. 
+
 5. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
